@@ -2,8 +2,18 @@ let airports = [
     "YYZ": "Toronto Pearson",
     "DUB": "Dublin",
     "JFK": "John F. Kennedy International Airport",
+    "DCA": "Ronald Reagan Washington National Airport",
+    "IAD": "Washington Dulles International Airport"
 ]
-
+if let airport = airports["IAD"] {
+    print("The abbreviation for \(airport) is IAD")
+}
+if let airport = airports["DCA"] {
+    print("The abbreviation for \(airport) is DCA")
+}
+if let airport = airports["JFK"] {
+    print("The abbreviation for \(airport) is JFK")
+}
 if let airport = airports["YYZ"] {
     print("The abbreviation for \(airport) is YYZ")
 }
@@ -20,6 +30,9 @@ for (key, value) in airports {
     print("The abbreviation for \(value) is \(key)")
 }
 
+for (airportCode, airportName) in airports {
+    print("The abbreviation for \(airportName) is \(airportCode)")
+}
 for (airportCode, airportName) in airports {
     print("The abbreviation for \(airportName) is \(airportCode)")
 }
